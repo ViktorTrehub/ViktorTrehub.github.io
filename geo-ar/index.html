@@ -57,13 +57,26 @@
 
       <a-entity 
         gltf-model="##tree" 
+        scale="0.01 0.01 0.01"
         look-at="[gps-camera]"
         gps-entity-place="latitude: 50.562083; longitude: 30.697306;"
       >
       </a-entity>
 
+      <a-entity 
+        gltf-model="##cosmo" 
+        scale="0.01 0.01 0.01"
+        look-at="[gps-camera]"
+        gps-entity-place="latitude: 50.561806; longitude: 30.696588;"
+      >
+      </a-entity>
+
       <a-assets>
         <a-asset-item id="tree" src="./assets/mammoth.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-assets>
+        <a-asset-item id="cosmo" src="./assets/Model.glb"></a-asset-item>
       </a-assets>
 
       <a-camera look-controls-enabled='false' gps-camera='gpsMinDistance: 0' arjs-look-controls='smoothingFactor: 0.1' rotation-reader> </a-camera>
