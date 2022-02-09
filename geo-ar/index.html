@@ -14,7 +14,8 @@
       vr-mode-ui="enabled: false"
       embedded
       renderer="logarithmicDepthBuffer: true;"
-      arjs="sourceType: webcam; debugUIEnabled: false;"
+      arjs="sourceType: webcam; debugUIEnabled: true;"
+      stats
     >
       <a-entity
         gltf-model='./assets/mammoth.gltf'
@@ -43,7 +44,7 @@
       ></a-entity> -->
 
       <a-entity
-        gltf-model= "your-server/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+        gltf-model= "https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
         scale="5 5 5"
         gps-entity-place="latitude: 50.563066; longitude: 30.693998;"
       ></a-entity>
@@ -57,7 +58,7 @@
 
       <a-entity 
         gltf-model="##tree" 
-        scale="0.01 0.01 0.01"
+        scale="1 1 1"
         look-at="[gps-camera]"
         gps-entity-place="latitude: 50.562083; longitude: 30.697306;"
       >
@@ -65,11 +66,18 @@
 
       <a-entity 
         gltf-model="##cosmo" 
-        scale="0.01 0.01 0.01"
+        scale="1 1 1"
         look-at="[gps-camera]"
         gps-entity-place="latitude: 50.561806; longitude: 30.696588;"
       >
       </a-entity>
+
+      <a-image 
+        src="./assets/ic_view_in_ar_new_googblue_48dp.png"
+        look-at="[gps-camera]"
+        gps-entity-place="latitude: 50.563066; longitude: 30.693998;"
+      >
+      </a-image>
 
       <a-assets>
         <a-asset-item id="tree" src="./assets/mammoth.gltf"></a-asset-item>
